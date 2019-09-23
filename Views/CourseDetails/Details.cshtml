@@ -1,0 +1,42 @@
+﻿@model rp799815_MIS4200.Models.CourseDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CourseDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseDetails.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseDetails.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instructor.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instructor.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qtyInstructor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qtyInstructor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.courseDetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
